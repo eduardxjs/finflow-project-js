@@ -1,0 +1,166 @@
+/* Estilo Base - Definições gerais do layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do Container principal */
+.container {
+    width: 50%;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos Títulos */
+h1,
+h2,
+h3 {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Estilo dos Botões */
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para inputs e selects */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Estilo para a lista de histórico */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para transações de entrada e saída */
+li.entrada {
+    background-color: #d4f1d4;
+    color: green;
+}
+
+li.saida {
+    background-color: #f1d4d4;
+    color: red;
+}
+
+/* Estilo para a seção de totais */
+.totais h3 {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Estilo para o histórico de transações */
+.historico {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historico h2 {
+    color: #0056b3;
+}
+
+/* Estilo do filtro de histórico */
+#filtro-historico {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+/* Estilo para os botões de limpar */
+#limpar-historico {
+    color: white;
+}
+
+#limpar-tudo {
+    color: white;
+}
+
+/* Estilo da paginação */
+.paginacao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paginacao-container button {
+    margin: 0 5px;
+}
+
+.paginacao-container button.ativo {
+    background-color: #0056b3;
+    border: 2px solid #0056b3;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.66rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
